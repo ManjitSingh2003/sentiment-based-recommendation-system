@@ -14,7 +14,7 @@ def load_models_and_data():
     with open('pickle_files/xgboost_model.pkl', 'rb') as f:
         sentiment_model = pickle.load(f)
 
-    data = pd.read_csv('data\sample30.csv')
+    data = pd.read_csv('data/sample30.csv')
 
     return recommendation_model, tfidf_vectorizer, sentiment_model, data
 
